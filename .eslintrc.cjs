@@ -15,6 +15,14 @@ module.exports = {
     "plugin:react/jsx-runtime",
     "prettier",
   ],
+  settings: {
+    'import/resolver': {
+      alias: {
+        map: [['@', './src']],
+        extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
+      },
+    },
+  },
   rules: {
     "no-shadow": "off",
     "@typescript-eslint/no-shadow": "warn",
